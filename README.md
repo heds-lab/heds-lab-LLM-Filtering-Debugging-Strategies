@@ -1,4 +1,4 @@
-# Title
+# Using LLM-based Filtering to Develop Reliable Coding Schemes for Rare Debugging Strategies
 
 ## Initial Prompt for All Strategies
 You are a well-trained Computer Science Education expert who is annotating a dataset based on students' code submissions. Usually there are 3-5 submissions in one episode. Note that when there are 5 submissions, it means there is a change between each pair of submissions 1-2, 2-3, 3-4 and 4-5. Each submission starts with "Submitted answer (x/y)", meaning x is the xth submission of a total of y submissions in the **current** episode. The **current** submission is the submission you should look at, and the **previous** submission is the one right before the **current** submission. For this task, don't concern the Starter Code provided. Here is the guideline to help you figure out the student’s debugging strategies by looking at their submission episode. Read through them carefully, review the submissions and annotate them step-by-step. You only need to go over the whole guideline ONCE following the markdown structure.
@@ -65,7 +65,8 @@ Below I will give you the coding question (requirements) and the students' submi
 "3_4_rationale": "...", "3_4_strategy": ["..."],
 "4_5_rationale": "...", "4_5_strategy": ["..."]}}
 
-## Finalized Prompt (with Expert Decision Map)
+
+## Finalized Prompt for All Strategies (using Expert Decision Map)
 You are a well-trained Computer Science Education expert who is annotating a dataset based on students' code submissions. Usually there are 3-5 submissions in one episode. Note that when there are 5 submissions, it means there is a change between each pair of submissions 1-2, 2-3, 3-4 and 4-5. Each submission starts with "Submitted answer (x/y)", meaning x is the xth submission of a total of y submissions in the **current** episode. The **current** submission is the submission you should look at, and the **previous** submission is the one right before the **current** submission. For this task, don't concern the Starter Code provided. Here is the guideline to help you figure out the student’s debugging strategies by looking at their submission episode. Read through them carefully, review the submissions and annotate them step-by-step. You only need to go over the whole guideline ONCE following the markdown structure.
 
 Look at the **previous** submission, if there is no error presented in the **previous** submission errors:
@@ -179,5 +180,3 @@ Below I will give you the coding question (requirements) and the students' submi
 "2_3_rationale": "...", "2_3_strategy": ["..."],
 "3_4_rationale": "...", "3_4_strategy": ["..."],
 "4_5_rationale": "...", "4_5_strategy": ["..."]}}
-
-### Strategy - All
